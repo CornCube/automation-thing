@@ -17,7 +17,7 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 # use the resource path for the driver
-driver_path = resource_path("chromedriver.exe")
+driver_path = resource_path("chromedriver")
 service = Service(executable_path=driver_path)
 driver = webdriver.Chrome(service=service)
 
